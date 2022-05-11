@@ -7,14 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <title>One Page</title>
 </head>
 
 <body>
-    <div id="hero-section">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <section id="hero-section" class="bg-transparent">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 mb-5 shadow-sm">
             <div class="container">
-                <a class="navbar-brand text-primary" href="#">One Page</a>
+                <a class="navbar-brand text-primary fs-3" href="#">OnePage</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -22,16 +23,28 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
+                        <li class="nav-item px-2">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#">About</a>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#">Team</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item px-2 dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
+                                Drop Down
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -42,52 +55,56 @@
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled">Disabled</a>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#">Contact</a>
                         </li>
                     </ul>
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <button class="btn btn-primary px-3 ms-4" type="submit">Get Started</button>
                 </div>
             </div>
         </nav>
-        <div class="top-hero-section">
+        <div class="top-hero-section bg-transparent">
             <div class="container">
                 <div class="text-center py-5">
-                    <h1 class="text-primary display-1 fw-bold">One Page Bootstrap</h1>
-                    <h2 class="text-danger display-1 fw-bold">Website Template</h2>
-                    <p>We are team of talented designers</p>
-                    <button type="button" class="btn btn-primary">Get Started</button>
+                    <h1 class="text-primary display-4 fw-bold">One Page Bootstrap</h1>
+                    <h2 class="text-danger display-4 fw-bold">Website Template</h2>
+                    <p class="fs-5">We are team of talented designers</p>
+                    <button type="button" class="btn btn-primary mt-3 px-5 py-2 fs-6">Get Started</button>
                 </div>
                 <section id="cards-section">
-                    <div class="row">
+                    <div class="row my-5">
                         <div class="col-lg-3 col-md-6 mb-3">
-                            <div class="card">
+                            <div class="card py-4 px-3 bg-white border-light shadow-sm">
                                 <div class="card-body">
-                                    <h6 class="text-primary">Lorem Ipsum</h6>
+                                    <span><i class="bi bi-stack text-primary fs-3"></i></span>
+                                    <h6 class="fw-bold my-3 fs-5">Lorem Ipsum</h6>
                                     <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 mb-3">
-                            <div class="card">
+                            <div class="card py-4 px-3 bg-white border-light shadow-sm">
                                 <div class="card-body">
-                                    <h6 class="text-primary">Lorem Ipsum</h6>
+                                    <span><i class="bi bi-palette text-primary fs-3"></i></span>
+                                    <h6 class="fw-bold my-3 fs-5">Lorem Ipsum</h6>
                                     <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 mb-3">
-                            <div class="card">
+                            <div class="card py-4 px-3 bg-white border-light shadow-sm">
                                 <div class="card-body">
-                                    <h6 class="text-primary">Lorem Ipsum</h6>
+                                    <span><i class="bi bi-command text-primary fs-3 fw-bold"></i></span>
+                                    <h6 class="fw-bold my-3 fs-5">Lorem Ipsum</h6>
                                     <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 mb-3">
-                            <div class="card">
+                            <div class="card py-4 px-3 bg-white border-light shadow-sm">
                                 <div class="card-body">
-                                    <h6 class="text-primary">Lorem Ipsum</h6>
+                                    <span><i class="bi bi-fingerprint text-primary fs-3"></i></span>
+                                    <h6 class="fw-bold my-3 fs-5">Lorem Ipsum</h6>
                                     <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
                                 </div>
                             </div>
@@ -96,13 +113,95 @@
                 </section>
             </div>
         </div>
-        <div id="about-section">
-            <div class="container">
-                
+    </section>
+    <section id="about-section" class="bg-white py-5">
+        <div class="container">
+            <h3 class="text-center text-primary fw-bold py-2">ABOUT US</h3>
+            <p class="text-center text-secondary fs-6">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.</p>
+            <div class="about-row row py-4">
+                <div class="about-row-left col-lg-6 col-md-12">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptas nisi veniam temporibus impedit. Harum dolores est corrupti molestias voluptatibus?</p>
+                    <ul class="about-list list-unstyled">
+                        <li>
+                            <p><span class="me-2 text-primary"><i class="bi bi-check2-all"></i></span>Ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                        </li>
+                        <li>
+                            <p><span class="me-2 text-primary"><i class="bi bi-check2-all"></i></span>Duis aute irure dolor in reprehenderit in coluptate velit</p>
+                        </li>
+                        <li>
+                            <p><span class="me-2 text-primary"><i class="bi bi-check2-all"></i></span>Ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="about-row-right col-lg-6 col-md-12">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur placeat in, nobis exercitationem vero soluta quo labore voluptatem officiis perspiciatis repellendus eius repudiandae velit debitis. Quasi eveniet voluptate eligendi iure, distinctio tempore est quo architecto optio! Quod provident dolores a ullam quibusdam nam consequatur magni eveniet? Eaque veniam beatae labore.</p>
+                    <button class="btn btn-outline-primary border-2 px-5 fs-6">Learn More</button>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+    <section id="counts" class="bg-light py-5">
+        <div class="container">
+            <div class="count-row row">
+                <div class="count-single col-lg-3 col-md-6">
+                    <div class="count-single-wrap">
+                        <h5 class="count-number display-5 fw-bold text-center">65</h5>
+                        <p class="text-center">Happy clients</p>
+                    </div>
+                </div>
+                <div class="count-single col-lg-3 col-md-6">
+                    <div class="count-single-wrap">
+                        <h5 class="count-number display-5 fw-bold text-center">85</h5>
+                        <p class="text-center">Projects</p>
+                    </div>
+                </div>
+                <div class="count-single col-lg-3 col-md-6">
+                    <div class="count-single-wrap">
+                        <h5 class="count-number display-5 fw-bold text-center">30</h5>
+                        <p class="text-center">Years of experience</p>
+                    </div>
+                </div>
+                <div class="count-single col-lg-3 col-md-6">
+                    <div class="count-single-wrap">
+                        <h5 class="count-number display-5 fw-bold text-center">20</h5>
+                        <p class="text-center">Awards</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about-video" class="bg-white py-5">
+        <div class="container my-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <img src="/img/about-video.jpg" alt="Happy Lady" srcset="" class="img-fluid">
+                    <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox play-btn" data-vbtype="video"></a>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <ul class="about-list list-unstyled">
+                        <li>
+                            <p><span class="me-2 text-primary"><i class="bi bi-check2-all"></i></span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </li>
+                        <li>
+                            <p><span class="me-2 text-primary"><i class="bi bi-check2-all"></i></span>Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+                        </li>
+                        <li>
+                            <p><span class="me-2 text-primary"><i class="bi bi-check2-all"></i></span>Voluptate repellendus pariatur reprehenderit corporis sint.</p>
+                        </li>
+                        <li>
+                            <p><span class="me-2 text-primary"><i class="bi bi-check2-all"></i></span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</p>
+                        </li>
+                    </ul>
+                    <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/3f7881fabf.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
