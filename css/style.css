@@ -13,7 +13,7 @@ body::before {
     background-repeat: no-repeat;
 }
 
-.card {
+.hero-card {
     transition: all 500ms ease;
     -webkit-transition: all 500ms ease;
     -moz-transition: all 500ms ease;
@@ -21,7 +21,7 @@ body::before {
     -o-transition: all 500ms ease;
 }
 
-.card:hover {
+.hero-card:hover {
     transform: scale(1.09);
     -webkit-transform: scale(1.09);
     -moz-transform: scale(1.09);
@@ -29,7 +29,7 @@ body::before {
     -o-transform: scale(1.09);
 }
 
-.card:hover > .card-body > h6 {
+.hero-card:hover .hero-card-header {
     color: #2487ce;
 }
 
