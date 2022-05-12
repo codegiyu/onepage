@@ -36,3 +36,47 @@ body::before {
 .count-single {
     color: #124265;
 }
+
+.about-video-image {
+    background-image: url("../img/about-video.jpg");
+    background-size: cover;
+    min-height: 15rem;
+}
+
+.about-video-play-btn {
+    width: 4rem;
+    height: 4rem;
+    background-color: #2487ce;
+    z-index: 1;
+    position: relative;
+}
+
+.about-video-play-btn::before {
+    content: '';
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: rgba(36, 135, 206, 0.4);
+    transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    -o-transform: scale(1.4);
+    z-index: -2;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.about-video-play-btn::after {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 0.8rem solid white;
+    border-top: 0.6rem solid transparent;
+    border-bottom: 0.6rem solid transparent;
+    margin: 0 0 0 12%;
+    z-index: 2;
+}
