@@ -187,7 +187,10 @@ body {
 
 .slide-circle.active { background-color: rgb( var(--clr-brightblue) );}
 
-.services-grid-item-wrap { height: 22rem;}
+.services-grid-item-wrap { 
+    height: 22rem;
+    transition: all 500ms ease;
+}
 
 .services-grid-item-wrap-1:hover > .services-card > .card-body > .services-blob-wrap > .service-blob-1 { fill: #47aeff;}
 .services-grid-item-wrap-2:hover > .services-card > .card-body > .services-blob-wrap > .service-blob-2 { fill: #ffa76e;}
