@@ -4,13 +4,14 @@
     --clr-darkblue: 18, 66, 101;
     --clr-brightblue: 36, 135, 206;
     --clr-blue: 13, 110, 253;
+    --clr-vlblue: 248, 251, 254;    /* #f8fbfe */
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
 }
 
-body::before {
+#hero-section::before {
     content: '';
     width: 100%;
     height: 100%;
@@ -26,6 +27,7 @@ body::before {
 .bg-darkblue { background-color: rgb( var(--clr-darkblue) );}
 .bg-brightblue { background-color: rgb( var(--clr-brightblue) );}
 .bg-blue { background-color: rgb( var(--clr-blue) );}
+.bg-vlblue { background-color: rgb( var(--clr-vlblue) );}
 
 .border-darkblue { border-color: rgb( var(--clr-darkblue) );}
 .border-brightblue { border-color: rgb( var(--clr-brightblue) );}
@@ -42,6 +44,14 @@ body::before {
 .fw-700 { font-weight: 700;}
 .fw-800 { font-weight: 800;}
 .fw-900 { font-weight: 900;}
+
+.navbar-nav > .nav-item > .top-links {
+    color: rgb( var(--clr-darkblue) );
+}
+
+.navbar-nav > .nav-item > .top-links.active, .navbar-nav > .nav-item > .top-links:hover {
+    color: rgb( var(--clr-brightblue) );
+}
 
 .hero-card {
     transition: all 500ms ease;
@@ -115,10 +125,10 @@ body::before {
     filter: grayscale(100);
     -webkit-filter: grayscale(100);
     transition: all 400ms ease-in-out;
-    -webkit-transition: all 700ms ease-in-out;
-    -moz-transition: all 700ms ease-in-out;
-    -ms-transition: all 700ms ease-in-out;
-    -o-transition: all 700ms ease-in-out;
+    -webkit-transition: all 400ms ease-in-out;
+    -moz-transition: all 400ms ease-in-out;
+    -ms-transition: all 400ms ease-in-out;
+    -o-transition: all 400ms ease-in-out;
 }
 
 .client-img:hover {
@@ -175,6 +185,42 @@ body::before {
     border: 1px solid rgb( var(--clr-brightblue) );
 }
 
-.slide-circle.active {
-    background-color: rgb( var(--clr-brightblue) );
+.slide-circle.active { background-color: rgb( var(--clr-brightblue) );}
+
+.services-grid-item-wrap { height: 22rem;}
+
+.services-grid-item-wrap-1:hover > .services-card > .card-body > .services-blob-wrap > .service-blob-1 { fill: #47aeff;}
+.services-grid-item-wrap-2:hover > .services-card > .card-body > .services-blob-wrap > .service-blob-2 { fill: #ffa76e;}
+.services-grid-item-wrap-3:hover > .services-card > .card-body > .services-blob-wrap > .service-blob-3 { fill: #e80368;}
+.services-grid-item-wrap-4:hover > .services-card > .card-body > .services-blob-wrap > .service-blob-4 { fill: #ffbb2c;}
+.services-grid-item-wrap-5:hover > .services-card > .card-body > .services-blob-wrap > .service-blob-5 { fill: #ff5828;}
+.services-grid-item-wrap-6:hover > .services-card > .card-body > .services-blob-wrap > .service-blob-6 { fill: #11dbcf;}
+.services-grid-item-wrap:hover > .services-card > .card-body > .services-blob-wrap > .service-icon { color: white;}
+
+.services-blob-wrap {
+    width: 8rem;
+    height: 8rem;
+    margin-top: -0.9rem;
 }
+
+.services-grid-item-wrap > .services-card > .card-body > .services-blob-wrap > .service-blob {
+    width: 100%;
+    height: 100%;
+    fill: #f5f5f5;
+}
+
+.service-icon {
+    position: absolute;
+    top: 2.75rem;
+    left: 2.75rem;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.services-grid-item-wrap-1 > .services-card > .card-body > .services-blob-wrap > .service-icon-1 { color: #47aeff;}
+.services-grid-item-wrap-2 > .services-card > .card-body > .services-blob-wrap > .service-icon-2 { color: #ffa76e;}
+.services-grid-item-wrap-3 > .services-card > .card-body > .services-blob-wrap > .service-icon-3 { color: #e80368;}
+.services-grid-item-wrap-4 > .services-card > .card-body > .services-blob-wrap > .service-icon-4 { color: #ffbb2c;}
+.services-grid-item-wrap-5 > .services-card > .card-body > .services-blob-wrap > .service-icon-5 { color: #ff5828;}
+.services-grid-item-wrap-6 > .services-card > .card-body > .services-blob-wrap > .service-icon-6 { color: #11dbcf;}
+

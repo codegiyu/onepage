@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
@@ -19,7 +20,7 @@
     <section id="hero-section" class="bg-transparent">
         <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top py-3 mb-5 shadow-sm">
             <div class="container">
-                <a class="navbar-brand fs-3" href="#"><p class="text-darkblue">OnePage</p></a>
+                <a class="navbar-brand fs-3" href="#"><p class="text-darkblue fw-400">OnePage</p></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -28,25 +29,25 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item px-2">
-                            <a class="nav-link active" aria-current="page" href="#"><small>Home</small></a>
+                            <a class="nav-link top-links active" aria-current="page" href="#"><small>Home</small></a>
                         </li>
                         <li class="nav-item px-2">
-                            <a class="nav-link" href="#"><small>About</small></a>
+                            <a class="nav-link top-links" href="#"><small>About</small></a>
                         </li>
                         <li class="nav-item px-2">
-                            <a class="nav-link" href="#"><small>Services</small></a>
+                            <a class="nav-link top-links" href="#"><small>Services</small></a>
                         </li>
                         <li class="nav-item px-2">
-                            <a class="nav-link" href="#"><small>Portfolio</small></a>
+                            <a class="nav-link top-links" href="#"><small>Portfolio</small></a>
                         </li>
                         <li class="nav-item px-2">
-                            <a class="nav-link" href="#"><small>Team</small></a>
+                            <a class="nav-link top-links" href="#"><small>Team</small></a>
                         </li>
                         <li class="nav-item px-2">
-                            <a class="nav-link" href="#"><small>Pricing</small></a>
+                            <a class="nav-link top-links" href="#"><small>Pricing</small></a>
                         </li>
                         <li class="nav-item px-2 dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            <a class="nav-link top-links dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 <small>Drop Down</small>
                             </a>
@@ -60,10 +61,10 @@
                             </ul>
                         </li>
                         <li class="nav-item px-2">
-                            <a class="nav-link" href="#"><small>Contact</small></a>
+                            <a class="nav-link top-links" href="#"><small>Contact</small></a>
                         </li>
                     </ul>
-                    <button class="btn btn-primary bg-brightblue border-brightblue px-3 ms-4" type="submit">Get Started</button>
+                    <button class="btn btn-primary bg-brightblue border-brightblue px-3 ms-4" type="submit"><small class="">Get Started</small></button>
                 </div>
             </div>
         </nav>
@@ -144,7 +145,7 @@
             </div>
         </div>
     </section>
-    <section id="counts" class="bg-light py-5">
+    <section id="counts" class="bg-vlblue py-5">
         <div class="container">
             <div class="count-row row">
                 <div class="count-single col-lg-3 col-md-6 col-6">
@@ -204,7 +205,7 @@
             </div>
         </div>
     </section>
-    <section id="clients-section" class="clients-section bg-light pt-3">
+    <section id="clients-section" class="clients-section bg-vlblue pt-3">
         <div class="container">
             <div class="row">
                 <div class="client-img-wrap col-lg-2 col-md-4 col-6">
@@ -287,12 +288,154 @@
             </div>
         </div>
     </section>
-    <section id="services-section" class="services-section bg-light py-5">
+    <section id="services-section" class="services-section bg-vlblue py-5">
         <div class="container">
-            
+            <h2 class="testimonials-header text-center text-darkblue fw-bold py-2">SERVICES</h2>
+            <p class="text-secondary text-center mb-5">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            <div class="row my-5">
+                <div class="services-grid-item col-lg-4 col-md-6 col-12 mb-4">
+                    <div class="services-grid-item-wrap services-grid-item-wrap-1 bg-white d-flex align-items-center px-4">
+                        <div class="services-card card py-1 px-1 border-0 bg-white">
+                            <div class="card-body py-0">
+                                <div class="services-blob-wrap mx-auto position-relative">                                    
+                                    <svg width="1000" height="1000" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" class="service-blob service-blob-1 py-0 my-0">
+                                        <defs>
+                                            <clipPath id="shape1">
+                                                <path d="M788.5,642.5Q727,785,591,741.5Q455,698,275,696.5Q95,695,106.5,505.5Q118,316,265.5,216.5Q413,117,600,129Q787,141,818.5,320.5Q850,500,788.5,642.5Z"></path>
+                                            </clipPath>
+                                        </defs>
+                                        <g  clip-path="url(#shape1)">
+                                            <path d="M788.5,642.5Q727,785,591,741.5Q455,698,275,696.5Q95,695,106.5,505.5Q118,316,265.5,216.5Q413,117,600,129Q787,141,818.5,320.5Q850,500,788.5,642.5Z" />
+                                        </g>
+                                    </svg>
+                                    <span class="service-icon service-icon-1 iconify" data-icon="icon-park-outline:dribble"></span>
+                                </div>
+                                <a href="#" class="text-decoration-none"><h6 class="hero-card-header text-center fw-600 my-3 fs-4 text-darkblue">Lorem Ipsum</h6></a>
+                                <p class="text-secondary text-center py-0 my-0"><small>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-grid-item col-lg-4 col-md-6 col-12 mb-4">
+                    <div class="services-grid-item-wrap services-grid-item-wrap-2 bg-white d-flex align-items-center px-4">
+                        <div class="services-card card py-1 px-1 border-0 bg-white">
+                            <div class="card-body py-0">
+                                <div class="services-blob-wrap mx-auto position-relative">                                    
+                                    <svg width="1000" height="1000" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" class="service-blob service-blob-2 py-0 my-0">
+                                        <defs>      
+                                            <clipPath id="shape2">
+                                                <path d="M805,613Q681,726,537,848.5Q393,971,278.5,816.5Q164,662,206.5,520.5Q249,379,322,210.5Q395,42,531,166Q667,290,798,395Q929,500,805,613Z"></path>
+                                            </clipPath>
+                                        </defs>
+                                        <g  clip-path="url(#shape2)">
+                                            <path d="M805,613Q681,726,537,848.5Q393,971,278.5,816.5Q164,662,206.5,520.5Q249,379,322,210.5Q395,42,531,166Q667,290,798,395Q929,500,805,613Z" />
+                                        </g>
+                                    </svg>
+                                    <span class="service-icon service-icon-2 iconify" data-icon="bx:file"></span>
+                                </div>
+                                <a href="#" class="text-decoration-none"><h6 class="hero-card-header text-center fw-600 my-3 fs-4 text-darkblue">Sed ut perspiciatis</h6></a>
+                                <p class="text-secondary text-center py-0 my-0"><small>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-grid-item col-lg-4 col-md-6 col-12 mb-4">
+                    <div class="services-grid-item-wrap services-grid-item-wrap-3 bg-white d-flex align-items-center px-4">
+                        <div class="services-card card py-0 px-1 border-0 bg-white">
+                            <div class="card-body py-0">
+                                <div class="services-blob-wrap mx-auto position-relative">                                    
+                                    <svg width="1000" height="1000" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" class="service-blob service-blob-3 py-0 my-0">
+                                        <defs>
+                                            <clipPath id="shape3">
+                                                <path d="M724.5,656Q749,812,597.5,774.5Q446,737,290.5,706.5Q135,676,108,487Q81,298,245,198.5Q409,99,574,149.5Q739,200,719.5,350Q700,500,724.5,656Z"></path>
+                                            </clipPath>
+                                        </defs>
+                                        <g  clip-path="url(#shape3)">
+                                            <path d="M724.5,656Q749,812,597.5,774.5Q446,737,290.5,706.5Q135,676,108,487Q81,298,245,198.5Q409,99,574,149.5Q739,200,719.5,350Q700,500,724.5,656Z" />
+                                        </g>
+                                    </svg>
+                                    <span class="service-icon service-icon-3 iconify" data-icon="bx:tachometer"></span>
+                                </div>
+                                <a href="#" class="text-decoration-none"><h6 class="hero-card-header text-center fw-600 mt-2 mb-3 fs-4 text-darkblue">Magni Dolores</h6></a>
+                                <p class="text-secondary text-center py-0 my-0"><small>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-grid-item col-lg-4 col-md-6 col-12 mb-4">
+                    <div class="services-grid-item-wrap services-grid-item-wrap-4 bg-white d-flex align-items-center px-4">
+                        <div class="services-card card py-1 px-1 border-0 bg-white">
+                            <div class="card-body py-0">
+                                <div class="services-blob-wrap mx-auto position-relative">                                    
+                                    <svg width="1000" height="1000" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" class="service-blob service-blob-4 py-0 my-0">
+                                        <defs>
+                                            <clipPath id="shape4">
+                                                <path d="M742,664.5Q763,829,592,837Q421,845,274,762.5Q127,680,217.5,543.5Q308,407,364,278Q420,149,572,184Q724,219,722.5,359.5Q721,500,742,664.5Z"></path>
+                                            </clipPath>
+                                        </defs>
+                                        <g  clip-path="url(#shape4)">
+                                            <path d="M742,664.5Q763,829,592,837Q421,845,274,762.5Q127,680,217.5,543.5Q308,407,364,278Q420,149,572,184Q724,219,722.5,359.5Q721,500,742,664.5Z" />
+                                        </g>
+                                    </svg>
+                                    <span class="service-icon service-icon-4 iconify" data-icon="bx:layer"></span>
+                                </div>
+                                <a href="#" class="text-decoration-none"><h6 class="hero-card-header text-center fw-600 my-3 fs-4 text-darkblue">Nemo Enim</h6></a>
+                                <p class="text-secondary text-center py-0 my-0"><small>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-grid-item col-lg-4 col-md-6 col-12 mb-4">
+                    <div class="services-grid-item-wrap services-grid-item-wrap-5 bg-white d-flex align-items-center px-4">
+                        <div class="services-card card py-1 px-1 border-0 bg-white">
+                            <div class="card-body py-0">
+                                <div class="services-blob-wrap mx-auto position-relative">                                    
+                                    <svg width="1000" height="1000" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" class="service-blob service-blob-5 py-0 my-0">
+                                        <defs>
+                                            <clipPath id="shape5">
+                                                <path d="M823.5,659Q754,818,587,835Q420,852,305,750.5Q190,649,161.5,486Q133,323,286.5,279.5Q440,236,614.5,187Q789,138,841,319Q893,500,823.5,659Z"></path>
+                                            </clipPath>
+                                        </defs>
+                                        <g  clip-path="url(#shape5)">
+                                            <path d="M823.5,659Q754,818,587,835Q420,852,305,750.5Q190,649,161.5,486Q133,323,286.5,279.5Q440,236,614.5,187Q789,138,841,319Q893,500,823.5,659Z" />
+                                        </g>
+                                    </svg>
+                                    <span class="service-icon service-icon-5 iconify" data-icon="bx:slideshow"></span>
+                                </div>
+                                <a href="#" class="text-decoration-none"><h6 class="hero-card-header text-center fw-600 my-3 fs-4 text-darkblue">Dele Cardo</h6></a>
+                                <p class="text-secondary text-center py-0 my-0"><small>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-grid-item col-lg-4 col-md-6 col-12 mb-4">
+                    <div class="services-grid-item-wrap services-grid-item-wrap-6 bg-white d-flex align-items-center px-4">
+                        <div class="services-card card py-1 px-1 border-0 bg-white">
+                            <div class="card-body py-0">
+                                <div class="services-blob-wrap mx-auto position-relative">                                    
+                                    <svg width="1000" height="1000" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" class="service-blob service-blob-6 py-0 my-0">
+                                        <defs>
+                                            <clipPath id="shape6">
+                                                <path d="M851.5,633.5Q713,767,551,876.5Q389,986,292,816.5Q195,647,137,472Q79,297,264,286Q449,275,582,252.5Q715,230,852.5,365Q990,500,851.5,633.5Z"></path>
+                                            </clipPath>
+                                        </defs>
+                                        <g  clip-path="url(#shape6)">
+                                            <path d="M851.5,633.5Q713,767,551,876.5Q389,986,292,816.5Q195,647,137,472Q79,297,264,286Q449,275,582,252.5Q715,230,852.5,365Q990,500,851.5,633.5Z" />
+                                        </g>
+                                    </svg>
+                                    <span class="service-icon service-icon-6 iconify" data-icon="bx:arch"></span>
+                                </div>
+                                <a href="#" class="text-decoration-none"><h6 class="hero-card-header text-center fw-600 my-3 fs-4 text-darkblue">Divera Don</h6></a>
+                                <p class="text-secondary text-center py-0 my-0"><small>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/3f7881fabf.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iconify/2.0.0/iconify.min.js" integrity="sha512-lYMiwcB608+RcqJmP93CMe7b4i9G9QK1RbixsNu4PzMRJMsqr/bUrkXUuFzCNsRUo3IXNUr5hz98lINURv5CNA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
