@@ -13,41 +13,46 @@ btn.on('click', function(e) {
     $('html, body').animate({scrollTop:0}, '300');
 });
 
-function resizeMasonryItem(item) {
-    let grid = document.getElementsByClassName("portfolio-layout")[0],
-        rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-row-gap')),
-        rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
+// import Swiper from 'swiper/swiper-bundle.esm.js';
+// import 'swiper/swiper-bundle.css';
 
-    let rowSpan = Math.ceil((item.querySelector('.portfolio-img').getBoundingClientRect().height+rowGap)/(rowHeight+rowGap));
 
-    item.style.gridRowEnd = 'span '+rowSpan;
 
-    item.querySelector('.portfolio-img').style.height = rowSpan * 10 + "px";
-}
+// function resizeMasonryItem(item) {
+//     let grid = document.getElementsByClassName("portfolio-layout")[0],
+//         rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-row-gap')),
+//         rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
 
-function resizeAllMasonryItems() {
-    let allItems = document.getElementsByClassName("portfolio-item");
+//     let rowSpan = Math.ceil((item.querySelector('.portfolio-img').getBoundingClientRect().height+rowGap)/(rowHeight+rowGap));
 
-    for (let i = 0; i < allItems.length; i++) {
-        resizeMasonryItem(allItems[i]);
-    }
-}
+//     item.style.gridRowEnd = 'span '+rowSpan;
 
-function waitForImages() {
-    let allItems = document.getElementsByClassName("portfolio-item");
+//     item.querySelector('.portfolio-img').style.height = rowSpan * 10 + "px";
+// }
 
-    for (let i = 0; i < allItems.length; i++) {
-        imagesLoaded( allItems[i], function(instance) {
-            let item = instance.elements[0];
-            resizeMasonryItem(item);
-        });
-    }
-}
+// function resizeAllMasonryItems() {
+//     let allItems = document.getElementsByClassName("portfolio-item");
 
-let masonryEvents = ['load', 'resize'];
+//     for (let i = 0; i < allItems.length; i++) {
+//         resizeMasonryItem(allItems[i]);
+//     }
+// }
 
-masonryEvents.forEach( function(event) {
-    window.addEventListener(event, resizeAllMasonryItems);
-});
+// function waitForImages() {
+//     let allItems = document.getElementsByClassName("portfolio-item");
 
-waitForImages();
+//     for (let i = 0; i < allItems.length; i++) {
+//         imagesLoaded( allItems[i], function(instance) {
+//             let item = instance.elements[0];
+//             resizeMasonryItem(item);
+//         });
+//     }
+// }
+
+// let masonryEvents = ['load', 'resize'];
+
+// masonryEvents.forEach( function(event) {
+//     window.addEventListener(event, resizeAllMasonryItems);
+// });
+
+// waitForImages();
