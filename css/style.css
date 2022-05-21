@@ -61,58 +61,6 @@ body {
 
 .ff-raleway { font-family: var(--ff-raleway);}
 
-.fs-90 {font-size: var(--fs-90);}
-.fs-80 {font-size: var(--fs-80);}
-
-
-#back-to-top {
-    display: inline-block;
-    background-color: rgb( var(--clr-brightblue) );
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    border-radius: 4px;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    -webkit-transition: background-color .3s, opacity .5s, visibility .5s;
-    -o-transition: background-color .3s, opacity .5s, visibility .5s;
-    transition: background-color .3s, opacity .5s, visibility .5s;
-    opacity: 0;
-    visibility: hidden;
-    z-index: 1000;
-}
-  
-#back-to-top i {
-    font-weight: 700;
-    font-size: 2em;
-    line-height: 40px;
-    color: rgb( var(--clr-white) );
-}
-  
-#back-to-top:hover, #back-to-top:active {
-    cursor: pointer;
-    background-color: rgb( var(--clr-blue) );
-}
-  
-#back-to-top.show {
-    opacity: 1;
-    visibility: visible;
-}
-
-.gb-white {
-    padding: 0.6rem 2.5rem;
-    border: 2px solid white;
-    font-size: 0.9rem;
-    color: white;
-    background-color: rgb( var(--clr-brightblue) );
-    text-decoration:  none;
-}
-
-.gb-white:hover {
-    background-color: white;
-    color:rgb( var(--clr-brightblue) );
-}
 
 
 #hero-section::before {
